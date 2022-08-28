@@ -1,0 +1,140 @@
+@font-face {
+  font-family: sunday;
+  src: url("../fonts/SUNDAY.ttf");
+}
+header .desktop {
+  display: flex;
+  justify-content: space-around;
+  font-family: sunday;
+  color: #fff;
+  background-color: #000;
+}
+header .desktop nav ul {
+  margin: 25px 0;
+  display: flex;
+  gap: 20px;
+}
+header .desktop nav a {
+  color: #fff;
+  text-decoration: none;
+}
+header .desktop nav li {
+  list-style: none;
+}
+
+.carousel {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-color: #f5f5f5;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s ease-out;
+  background-image: url("../img/airport8.jpg");
+  -webkit-animation: Carousel 28s infinite linear;
+          animation: Carousel 28s infinite linear;
+}
+.carousel button {
+  font-family: sunday;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  height: 50px;
+  width: 150px;
+  -webkit-animation: Color_button 28s infinite linear;
+          animation: Color_button 28s infinite linear;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.content {
+  width: 100%;
+  background-size: cover;
+  height: 500px;
+  background-image: url("../img/airport7.jpg");
+}
+
+@-webkit-keyframes Color_button {
+  0% {
+    color: #000;
+    border: 1px solid #000;
+  }
+  100% {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+@keyframes Color_button {
+  0% {
+    color: #000;
+    border: 1px solid #000;
+  }
+  100% {
+    color: #fff;
+    border: 1px solid #fff;
+  }
+}
+@-webkit-keyframes Carousel {
+  0% {
+    background-image: url("../img/airport.jpg");
+  }
+  30% {
+    background-image: url("../img/airport2.jpg");
+  }
+  60% {
+    background-image: url("../img/airport3.jpg");
+  }
+  70% {
+    background-image: url("../img/airport4.jpg");
+  }
+  90% {
+    background-image: url("../img/airport6.jpg");
+  }
+  100% {
+    background-image: url("../img/airport7.jpg");
+  }
+}
+@keyframes Carousel {
+  0% {
+    background-image: url("../img/airport.jpg");
+  }
+  30% {
+    background-image: url("../img/airport2.jpg");
+  }
+  60% {
+    background-image: url("../img/airport3.jpg");
+  }
+  70% {
+    background-image: url("../img/airport4.jpg");
+  }
+  90% {
+    background-image: url("../img/airport6.jpg");
+  }
+  100% {
+    background-image: url("../img/airport7.jpg");
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #000;
+  color: #fff;
+  font-family: sunday;
+}
+footer .despega h2 {
+  cursor: pointer;
+}
+footer nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+footer nav a {
+  color: #fff;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */
