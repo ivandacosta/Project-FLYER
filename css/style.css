@@ -2,24 +2,16 @@
   font-family: sunday;
   src: url("../fonts/SUNDAY.ttf");
 }
-header .desktop {
-  display: flex;
-  justify-content: space-around;
+.container_desktop {
+  display: none;
+}
+
+.navbar-brand {
   font-family: sunday;
+}
+
+.nav-item a {
   color: #fff;
-  background-color: #000;
-}
-header .desktop nav ul {
-  margin: 25px 0;
-  display: flex;
-  gap: 20px;
-}
-header .desktop nav a {
-  color: #fff;
-  text-decoration: none;
-}
-header .desktop nav li {
-  list-style: none;
 }
 
 .carousel {
@@ -56,6 +48,10 @@ header .desktop nav li {
   background-size: cover;
   height: 500px;
   background-image: url("../img/airport7.jpg");
+}
+.content select {
+  margin: auto;
+  width: 300px;
 }
 
 @-webkit-keyframes Color_button {
@@ -137,4 +133,35 @@ footer nav ul {
 footer nav a {
   color: #fff;
   font-size: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  header .mobile {
+    display: none;
+  }
+  header .container_desktop {
+    display: contents;
+  }
+  header .desktop {
+    display: flex;
+    justify-content: space-around;
+    font-family: sunday;
+    color: #fff;
+    background-color: #000;
+  }
+  header .desktop .logo {
+    margin: 20px 0;
+  }
+  header .desktop nav ul {
+    margin: 25px 0;
+    display: flex;
+    gap: 20px;
+  }
+  header .desktop nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  header .desktop nav li {
+    list-style: none;
+  }
 }/*# sourceMappingURL=style.css.map */

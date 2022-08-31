@@ -4,27 +4,17 @@
 }
 
 //Header
-header {
-  .desktop {
-    display: flex;
-    justify-content: space-around;
-    font-family: sunday;
+.container_desktop {
+  display: none;
+}
+
+.navbar-brand {
+  font-family: sunday;
+}
+
+.nav-item {
+  a {
     color: #fff;
-    background-color: #000;
-    nav {
-      ul {
-        margin: 25px 0;
-        display: flex;
-        gap: 20px;
-      }
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-      li {
-        list-style: none;
-      }
-    }
   }
 }
 
@@ -63,6 +53,11 @@ header {
   background-size: cover;
   height: 500px;
   background-image: url("../img/airport7.jpg");
+
+  select {
+    margin: auto;
+    width: 300px;
+  }
 }
 
 @keyframes Color_button {
@@ -120,6 +115,41 @@ footer {
     a {
       color: #fff;
       font-size: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    .mobile {
+      display: none;
+    }
+    .container_desktop {
+      display: contents;
+    }
+    .desktop {
+      display: flex;
+      justify-content: space-around;
+      font-family: sunday;
+      color: #fff;
+      background-color: #000;
+      .logo {
+        margin: 20px 0;
+      }
+      nav {
+        ul {
+          margin: 25px 0;
+          display: flex;
+          gap: 20px;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+        li {
+          list-style: none;
+        }
+      }
     }
   }
 }
